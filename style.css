@@ -1,0 +1,84 @@
+* {
+  background-color: var(--primary-color);
+  margin: 0;
+}
+
+:root {
+  --primary-color: #feb47b;
+  --secondary-color: #ff7e5f;
+  --accent-color:white;
+
+
+/* I want to move h1 down, but this doesn't do anything??? */
+/*header h1 {
+  margin-top: 20px;
+}*/
+
+p {
+  color: white;
+  margin: 20px;
+}
+
+main {
+  display: grid;
+  width: 100%;
+  height: 700px;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+  grid-template-rows: auto; /* 2 rows */
+  gap: 20px; /* Gap between grid items */
+ 
+}
+
+pre {
+  color: var(--accent-color);
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+}
+
+.intro {
+  border: 5px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  color: var(--secondary-color)
+  ;
+}
+
+.card {
+  border: 1px dashed white;
+  color: var(--secondary-color);
+  padding: 20px;
+  margin: 10px;
+  font-size: 15px;
+ 
+}
+
+.card h2 {
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  color: var(--secondary-color)
+  position: relative;
+  margin-top: -40px;
+}
+
+.card p {
+  color: var(--secondary-color)
+}
+
+.card pre {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to top, #ff7e5f, #feb47b);
+  color: var(--accent-color);
+  border-radius: 10px; 
+  
+}
